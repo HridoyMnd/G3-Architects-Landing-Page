@@ -15,6 +15,10 @@ li {
 a {
     text-decoration:none;
 }
+button {
+    background-color: none;
+    border:none;
+}
 
 /* css variables */
 :root {
@@ -27,7 +31,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    width:94%;
     margin:auto;
 }
 
@@ -38,6 +41,8 @@ body {
     padding-bottom:10px;
     justify-content:space-between;
     align-items:center;
+    width: 90%;
+    margin: auto;
 }
 
 .nav_logo {
@@ -62,3 +67,43 @@ body {
     color:var(--primary-color)
 }
 
+/* styles applyed for banner section */
+.header_container {
+    background-color: #ff8f0e17;
+}
+.banner_container {
+    width: 90%;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding: 10px 0px 30px 0px;
+    text-align:center;
+
+    
+}
+.banner_container h1 {
+    font-size:40px;
+    margin-bottom:20px;
+}
+.banner_container p {
+    width:70%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+.banner_button {
+    background-color: var(--primary-color);
+    color:#fff;
+    padding: 15px 30px;
+    border-radius:5px;
+    margin: 0px 0px 30px 0px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+.banner_button:hover {
+    background-color: #e47900;
+}
+.banner_container img {
+    width: 100%;
+}
