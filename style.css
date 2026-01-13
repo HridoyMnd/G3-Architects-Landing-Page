@@ -1,8 +1,64 @@
+
+/* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work_sans_font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+/* common style for all element */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+
+/* css variables */
+:root {
+    --primary-color: #FF900E;
+}
+
+/* style applyed for body */
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width:94%;
+    margin:auto;
+}
+
+/* styles applyed for navbar */
+.nav_container {
+    display:flex;
+    padding-top:10px;
+    padding-bottom:10px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav_logo {
+    font-size:28px;
+    cursor:pointer;
+}
+.nav_item_container {
+    display:flex;
+    gap:10px;
+    align-items: center;
+
+}
+.nav_item_container li a {
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:6px;
+    padding-bottom:6px;
+    transition: all 0.3s ease;
+    color:#000;
+}
+.nav_item_container li a:hover {
+    color:var(--primary-color)
+}
+
